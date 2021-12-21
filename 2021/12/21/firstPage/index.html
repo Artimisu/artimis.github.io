@@ -164,15 +164,21 @@
 
 
 
-
-
 <h1 id="域名申请"><a href="#域名申请" class="headerlink" title="域名申请"></a>域名申请</h1><p>首先需要在阿里云申请域名<br><a target="_blank" rel="noopener" href="https://www.aliyun.com/ss/?k=%E5%9F%9F%E5%90%8D">https://www.aliyun.com/ss/?k=%E5%9F%9F%E5%90%8D</a></p>
 <p>注册阿里云，</p>
-<h3 id="添加CNAME文件"><a href="#添加CNAME文件" class="headerlink" title="添加CNAME文件"></a>添加CNAME文件</h3><p>在blog/source中添加文件CNAME</p>
-<p>并写入你的域名如:<a target="_blank" rel="noopener" href="http://www.asdf.com/">www.asdf.com</a></p>
 <h3 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h3><p>打开阿里云首页<br>控制台-&gt;域名-&gt;域名列表-&gt;解析</p>
+<p>此处可能没有记录类型，默认的记录类型为A，因此记录值需要填写ip地址。可以在terminal中 ping 你的github名称.github.io，就能得到ip地址，生成解析文件后再进行修改即可。</p>
 <p>设置主机记录@，记录类型为CNAME，记录值是”你的github名称.github.io“。<br>设置主机记录www，记录类型为CNAME，记录值是”你的github名称.github.io“</p>
-<h3 id="部署到GitHub上"><a href="#部署到GitHub上" class="headerlink" title="部署到GitHub上"></a>部署到GitHub上</h3><p>在项目的Settings中，在Custom domain那里添加自己的域名：</p>
+<h3 id="部署到GitHub上"><a href="#部署到GitHub上" class="headerlink" title="部署到GitHub上"></a>部署到GitHub上</h3><p>在blog/source中添加文件CNAME</p>
+<p>并写入你的域名如:<a target="_blank" rel="noopener" href="http://www.asdf.com/">www.asdf.com</a></p>
+<p>接着回到blog的终端：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>接着在项目的Settings中，找到左侧栏中的pages, 点击它并在Custom domain那里添加自己的域名：</p>
+<p>此处可能找不到custom domain , 需要将Branch换成master才能出现custom domain</p>
+<img src="/Users/daifengqi/Library/Application Support/typora-user-images/image-20211222002617219.png" alt="image-20211222002617219" style="zoom:50%;" />
+
+<h2 id="域名备案"><a href="#域名备案" class="headerlink" title="域名备案"></a>域名备案</h2><p>到阿里云主页，最上一栏的右边有ICP备案，根据教程走即可。</p>
 
       </section>
 

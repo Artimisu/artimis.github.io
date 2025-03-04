@@ -7,8 +7,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -16,12 +19,12 @@
   <meta name="author" content="Artimis">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Pythontype -a python3 查看所有python3安装目录 which python 查看当前使用的是哪里的python tmux使用方法123456789101112131415tmux lstmux new -s &lt; name&gt;tmux attach -t &lt; name&gt;&#x2F;&lt; number&gt;tmux switch -t &lt; name &amp;">
+    <meta name="description" content="Python type -a python3 查看所有python3安装目录 which python 查看当前使用的是哪里的python tmux使用方法 123456789101112131415tmux lstmux new -s &lt; name&gt;tmux attach -t &lt; name&gt;&#x2F;&lt; number&gt;tmux switch -t &lt; name">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux常用命令">
 <meta property="og:url" content="http://example.com/2021/12/21/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Artimis">
-<meta property="og:description" content="Pythontype -a python3 查看所有python3安装目录 which python 查看当前使用的是哪里的python tmux使用方法123456789101112131415tmux lstmux new -s &lt; name&gt;tmux attach -t &lt; name&gt;&#x2F;&lt; number&gt;tmux switch -t &lt; name &amp;">
+<meta property="og:description" content="Python type -a python3 查看所有python3安装目录 which python 查看当前使用的是哪里的python tmux使用方法 123456789101112131415tmux lstmux new -s &lt; name&gt;tmux attach -t &lt; name&gt;&#x2F;&lt; number&gt;tmux switch -t &lt; name">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-21T08:52:35.000Z">
 <meta property="article:modified_time" content="2021-12-22T06:29:43.000Z">
@@ -30,56 +33,72 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
   <title>linux常用命令 - Artimis</title>
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
 
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
-    
-  
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
 
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
-  
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.13","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
-  <header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Artimis</strong>
+      <strong>Unicode_u</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -97,9 +116,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -109,9 +128,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -121,9 +140,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -133,9 +152,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -145,9 +164,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -157,9 +176,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/AI-Paper-Reading/">
-                <i class="iconfont icon-tags-fill"></i>
-                Paper Reading
+              <a class="nav-link" href="/Paper-Reading/" target="_self">
+                <i class="iconfont icon-note"></i>
+                <span>Paper_Reading</span>
               </a>
             </li>
           
@@ -167,14 +186,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -182,57 +203,69 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/imgs/a4.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="linux常用命令">
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-12-21 16:52" pubdate>
-        2021年12月21日 下午
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      3.4k 字
-    </span>
   
 
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      28 分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="linux常用命令"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2021-12-21 16:52" pubdate>
+          2021年12月21日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
+
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
@@ -241,96 +274,172 @@
 
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
     <div class="col-lg-8 nopadding-x-md">
       <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
+        <div id="board">
           <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">linux常用命令</h1>
+            <h1 id="seo-header">linux常用命令</h1>
             
-            <div class="markdown-body">
-              <h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p><code>type -a python3</code></p>
+              <p id="updated-time" class="note note-info" style="">
+                
+                  
+                    本文最后更新于 2021年12月22日 下午
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="python">Python</h2>
+<p><code>type -a python3</code></p>
 <p>查看所有python3安装目录</p>
 <p><code>which python</code></p>
 <p>查看当前使用的是哪里的python</p>
-<h2 id="tmux使用方法"><a href="#tmux使用方法" class="headerlink" title="tmux使用方法"></a>tmux使用方法</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs sh">tmux ls<br><br>tmux new -s &lt; name&gt;<br><br>tmux attach -t &lt; name&gt;/&lt; number&gt;<br><br>tmux switch -t &lt; name &gt;/&lt; number &gt;<br><br>tmux detach<br><br>Ctrl+b d：分离当前会话。<br><br>Ctrl+b s：列出所有会话。<br><br>Ctrl+b $：重命名当前会话<br></code></pre></td></tr></table></figure>
-
-
-
-<h2 id="ipdb操作："><a href="#ipdb操作：" class="headerlink" title="ipdb操作："></a>ipdb操作：</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs sh">ipdb.set_trace()<br><br>python -m ipdb your_code.py<br><br>下一条语句<br>使用n(next)执行下一条语句<br><br>进入函数内部<br>使用s(step into)进入函数调用的内部。<br><br>b line_number<br><br>b file_name:line_number<br><br>一直执行直到遇到下一个断点<br><br>使用c(<span class="hljs-built_in">continue</span>)执行代码直到遇到某个断点或程序执行完毕。<br><br>一直执行直到返回<br>使用r(<span class="hljs-built_in">return</span>)执行代码直到当前所在的这个函数返回。<br><br>跳过某段代码<br>使用j line_number(jump)可以跳过某段代码，直接执行指定行号所在的代码。<br>更多上下文<br><br>在IPDB调试环境中，默认只显示当前执行的代码行，以及其上下各一行的代码。如果想要看到更多的上下文代码，可以使用l first[, second](list)命令。<br><br>其中first指示向上最多显示的行号，second指示向下最多显示的行号（可以省略）。当second小于first时，second指的是从first开始的向下的行数（相对值vs绝对值）<br><br>我在哪里<br>w<br>调试兴起，可能你会忘了自己目前所在的行号。例如在打印了若干变量值后，屏幕完全被这些值占据。使用w或者<span class="hljs-built_in">where</span>可以打印出目前所在的行号位置以及上下文信息。<br><br>这是啥<br>我们可以使用whatis variable_name的方法，查看变量的类别（感觉有点鸡肋，用<span class="hljs-built_in">type</span>也可以办到）。<br><br>当你身处一个函数内部的时候，可以使用a(argument)打印出传入函数的所有参数的值。<br><br>使用p(<span class="hljs-built_in">print</span>)和pp(pretty <span class="hljs-built_in">print</span>)可以打印表达式的值。<br><br>使用cl或者clear file:line_number清除断点。如果没有参数，则清除所有断点。<br><br>使用restart重新启动调试器，断点等信息都会保留。restart实际是run的别名，使用run args的方式传入参数。<br><br>使用q退出调试，并清除所有信息。<br></code></pre></td></tr></table></figure>
-
-
-
-
-<h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><p>screen是一个可以在多个进程（通常是交互式shell）之间复用一个物理终端的全屏幕窗口管理器。即linux下使用多窗口</p>
+<h2 id="tmux使用方法">tmux使用方法</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs sh">tmux ls<br><br>tmux new -s &lt; name&gt;<br><br>tmux attach -t &lt; name&gt;/&lt; number&gt;<br><br>tmux switch -t &lt; name &gt;/&lt; number &gt;<br><br>tmux detach<br><br>Ctrl+b d：分离当前会话。<br><br>Ctrl+b s：列出所有会话。<br><br>Ctrl+b $：重命名当前会话<br></code></pre></td></tr></table></figure>
+<h2 id="ipdb操作">ipdb操作：</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs sh">ipdb.set_trace()<br><br>python -m ipdb your_code.py<br><br>下一条语句<br>使用n(next)执行下一条语句<br><br>进入函数内部<br>使用s(step into)进入函数调用的内部。<br><br>b line_number<br><br>b file_name:line_number<br><br>一直执行直到遇到下一个断点<br><br>使用c(<span class="hljs-built_in">continue</span>)执行代码直到遇到某个断点或程序执行完毕。<br><br>一直执行直到返回<br>使用r(<span class="hljs-built_in">return</span>)执行代码直到当前所在的这个函数返回。<br><br>跳过某段代码<br>使用j line_number(jump)可以跳过某段代码，直接执行指定行号所在的代码。<br>更多上下文<br><br>在IPDB调试环境中，默认只显示当前执行的代码行，以及其上下各一行的代码。如果想要看到更多的上下文代码，可以使用l first[, second](list)命令。<br><br>其中first指示向上最多显示的行号，second指示向下最多显示的行号（可以省略）。当second小于first时，second指的是从first开始的向下的行数（相对值vs绝对值）<br><br>我在哪里<br>w<br>调试兴起，可能你会忘了自己目前所在的行号。例如在打印了若干变量值后，屏幕完全被这些值占据。使用w或者<span class="hljs-built_in">where</span>可以打印出目前所在的行号位置以及上下文信息。<br><br>这是啥<br>我们可以使用whatis variable_name的方法，查看变量的类别（感觉有点鸡肋，用<span class="hljs-built_in">type</span>也可以办到）。<br><br>当你身处一个函数内部的时候，可以使用a(argument)打印出传入函数的所有参数的值。<br><br>使用p(<span class="hljs-built_in">print</span>)和pp(pretty <span class="hljs-built_in">print</span>)可以打印表达式的值。<br><br>使用cl或者clear file:line_number清除断点。如果没有参数，则清除所有断点。<br><br>使用restart重新启动调试器，断点等信息都会保留。restart实际是run的别名，使用run args的方式传入参数。<br><br>使用q退出调试，并清除所有信息。<br></code></pre></td></tr></table></figure>
+<h2 id="screen">screen</h2>
+<p>screen是一个可以在多个进程（通常是交互式shell）之间复用一个物理终端的全屏幕窗口管理器。即linux下使用多窗口</p>
 <p>常用screen参数</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><code class="hljs sh">screen -S session_name  <br><br>新建一个叫session_name的session<br><br>screen -ls（或者screen -list） <br><br>列出当前所有的session<br><br>screen -r session_name  <br><br>回到session_name这个session<br><br>screen -d session_name   <br><br>远程detach某个session<br><br>screen -d -r session_name      <br><br>结束当前session并回到session_name这个session<br><br>滑动窗口：<br>Ctrl + a + [<br>h -    Move the cursor left by one character<br>j -    Move the cursor down by one line<br>k -    Move the cursor up by one line<br>l -    Move the cursor right by one character<br>0 -    Move to the beginning of the current line<br>$ -    Move to the end of the current line.<br>G -    Moves to the specified line<br>       (defaults to the end of the buffer).<br>C-u -  Scrolls a half page up.<br>C-b -  Scrolls a full page up.<br>C-d -  Scrolls a half page down.<br>C-f -  Scrolls the full page down.<br><br>进入screen窗口后，想暂时退出（等会还想连接这个screen窗口）<br>crtl+a+d<br><br>退出当前screen窗口，结束当前screen窗口，不想再连接回来（即杀死会话）<br><span class="hljs-built_in">exit</span>或者ctrl+d<br></code></pre></td></tr></table></figure>
-
 <p>top查看谁在用程序</p>
-<h2 id="pytorch配置"><a href="#pytorch配置" class="headerlink" title="pytorch配置"></a>pytorch配置</h2><p>下载hydra-0.11<br>python setup.py install<br>pip install gym tensorboard</p>
-<p>pip3 install –pre torch torchvision torchaudio -f <a target="_blank" rel="noopener" href="https://download.pytorch.org/whl/nightly/cu111/torch_nightly.html">https://download.pytorch.org/whl/nightly/cu111/torch_nightly.html</a></p>
+<h2 id="pytorch配置">pytorch配置</h2>
+<p>下载hydra-0.11 python setup.py install pip install gym tensorboard</p>
+<p>pip3 install --pre torch torchvision torchaudio -f https://download.pytorch.org/whl/nightly/cu111/torch_nightly.html</p>
 <p>conda install pytorch-1.8.0-py3.8_cuda11.1_cudnn8.0.5_0.tar.bz2</p>
-<p>conda clean –all</p>
+<p>conda clean --all</p>
 <p>pip install torchvison==0.9.0</p>
 <p>permute(dims)</p>
 <p>将tensor的维度换位。</p>
-<h2 id="PyTorch的nn-Linear（）详解"><a href="#PyTorch的nn-Linear（）详解" class="headerlink" title="PyTorch的nn.Linear（）详解:"></a>PyTorch的nn.Linear（）详解:</h2><p>nn.linear(in_features,out_features,bias=True)</p>
-<p>in_features指的是输入的二维张量的大小，即输入的[batch_size, size]中的size。  size = channel * height * width<br>out_features指的是输出的二维张量的大小</p>
-<p>在使用前需要把数据view一下，四维变二维<br>x = x.view(x.size[0],-1)</p>
-<p>torch.distributions.Categorical<br>对某个array进行分类，输出的是类别的分布</p>
-<h2 id="服务器本地传文件："><a href="#服务器本地传文件：" class="headerlink" title="服务器本地传文件："></a>服务器本地传文件：</h2><p>ssh <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#64;&#49;&#57;&#52;&#46;&#49;&#54;&#53;&#x2e;&#x31;&#46;&#50;&#48;&#x33;">&#114;&#x6f;&#x6f;&#116;&#64;&#49;&#57;&#52;&#46;&#49;&#54;&#53;&#x2e;&#x31;&#46;&#50;&#48;&#x33;</a> -p 2222  #指定端口登录<br>scp &lt;本地文件名&gt; -p 端口号 &lt;用户名&gt;@&lt;ssh服务器地址&gt;:&lt;上传保存路径即文件名&gt;</p>
-<p>查看文件大小du -h –max-depth=1 your_dest_dir</p>
-<h2 id="vscode-缩进："><a href="#vscode-缩进：" class="headerlink" title="vscode 缩进："></a>vscode 缩进：</h2><p>command [<br>command ]</p>
-<h2 id="有关vscode崩坏的解决："><a href="#有关vscode崩坏的解决：" class="headerlink" title="有关vscode崩坏的解决："></a>有关vscode崩坏的解决：</h2><p>从 <a target="_blank" rel="noopener" href="https://update.code.visualstudio.com/commit:$%7Bcommit_id%7D/server-linux-x64/stable">https://update.code.visualstudio.com/commit:${commit_id}/server-linux-x64/stable</a> 下载 vs code server</p>
-<p>3866c3553be8b268c8a7f8c0482c0c0177aa8bfa<br><a target="_blank" rel="noopener" href="https://update.code.visualstudio.com/commit:e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/server-linux-x64/stable">https://update.code.visualstudio.com/commit:e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/server-linux-x64/stable</a></p>
+<h2 id="pytorch的nn.linear详解">PyTorch的nn.Linear（）详解:</h2>
+<p>nn.linear(in_features,out_features,bias=True)</p>
+<p>in_features指的是输入的二维张量的大小，即输入的[batch_size, size]中的size。 size = channel * height * width out_features指的是输出的二维张量的大小</p>
+<p>在使用前需要把数据view一下，四维变二维 x = x.view(x.size[0],-1)</p>
+<p>torch.distributions.Categorical 对某个array进行分类，输出的是类别的分布</p>
+<h2 id="服务器本地传文件">服务器本地传文件：</h2>
+<p>ssh root@194.165.1.203 -p 2222 #指定端口登录 scp <本地文件名> -p 端口号 <用户名>@<ssh服务器地址>:<上传保存路径即文件名></p>
+<p>查看文件大小du -h --max-depth=1 your_dest_dir</p>
+<h2 id="vscode-缩进">vscode 缩进：</h2>
+<p>command [ command ]</p>
+<h2 id="有关vscode崩坏的解决">有关vscode崩坏的解决：</h2>
+<p>从 https://update.code.visualstudio.com/commit:${commit_id}/server-linux-x64/stable 下载 vs code server</p>
+<p>3866c3553be8b268c8a7f8c0482c0c0177aa8bfa https://update.code.visualstudio.com/commit:e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/server-linux-x64/stable</p>
 <p>${commit_id}替换为当前电脑id 379476f0e13988d90fab105c5c19e7abc8b1dea8</p>
 <p>scp 传输到 vscode-server/bin/下</p>
 <p>将远程的.vscode文件删除并重新连接可得到该id</p>
 <p>cd /root/.vscode-server/bin/379476f0e13988d90fab105c5c19e7abc8b1dea8</p>
-<p>mv vscode-server-linux-x64.tar vscode-server.tar.gz<br>touch vscode-scp-done.flag</p>
+<p>mv vscode-server-linux-x64.tar vscode-server.tar.gz touch vscode-scp-done.flag</p>
 <p>mv vscode-server-linux-x64.tar.gz vscode-server.tar.gz</p>
 <p>然后再连接就可以了。</p>
 <p>又踩坑了，注意从谷歌下载该压缩包，大小大概为50m</p>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/hellow-world/">hellow world</a>
-                    
-                  </div>
                 
               </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/hellow-world/" class="print-no-link">#hellow world</a>
+      
+    </div>
+  
+</div>
+
+
               
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>linux常用命令</div>
+      <div>http://example.com/2021/12/21/linux常用命令/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Artimis</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2021年12月21日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
               
               
-                <div class="post-prevnext">
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2021/12/21/firstPage/" title="博客搭建">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">博客搭建</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/12/21/pytorch%E5%9D%91+mujoco%E9%85%8D%E7%BD%AE/">
+                      <a href="/2021/12/21/pytorch%E5%9D%91+mujoco%E9%85%8D%E7%BD%AE/" title="pytorch+mujoco">
                         <span class="hidden-mobile">pytorch+mujoco</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -342,23 +451,91 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script type="text/javascript">
+        var disqus_config = function() {
+          this.page.url = 'http://example.com/2021/12/21/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/';
+          this.page.identifier = '/2021/12/21/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/';
+        };
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//' + 'fluid' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
+
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
     </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
-      </div>
-    
+
+
+  </aside>
+
+
+    </div>
   </div>
 </div>
 
-<!-- Custom -->
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
 
 
     
@@ -383,35 +560,36 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
   
-
   
-</footer>
-
-
-  <!-- SCRIPTS -->
   
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
 
   <script>
     NProgress.configure({"showSpinner":false,"trickleSpeed":100})
@@ -422,15 +600,27 @@
   </script>
 
 
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -440,56 +630,158 @@
 
 
 
-  
-
-
 
   
-    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
   
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
   
-    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
   
-  
-    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
-  
-  
-    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
-  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>

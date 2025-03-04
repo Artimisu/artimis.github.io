@@ -17,18 +17,35 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="Artimis">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:title" content="AI Paper Reading">
+<meta property="og:url" content="http://example.com/AI-Paper-Reading/index.html">
 <meta property="og:site_name" content="Artimis">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-04T07:46:56.000Z">
+<meta property="article:modified_time" content="2025-03-04T08:02:04.535Z">
 <meta property="article:author" content="Artimis">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Artimis</title>
+  <title>AI Paper Reading - Artimis</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -55,7 +72,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -163,22 +180,18 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/imgs/a8.jpg') no-repeat center center;
+         style="background: url('/imgs/a9.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Blogs of Artimis">
+            <span class="h2" id="subtitle" title="AI Paper Reading">
               
             </span>
 
             
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -189,191 +202,18 @@
     
       <div class="container nopadding-x-md">
         <div class="py-5" id="board"
-          style=margin-top:0>
+          >
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
+<article class="page-content">
+  
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/21/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" target="_self">
-          linux常用命令
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/21/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" target="_self">
-          
-          Pythontype -a python3 查看所有python3安装目录 which python 查看当前使用的是哪里的python tmux使用方法123456789101112131415tmux lstmux new -s &lt; name&gt;tmux attach -t &lt; name&gt;&#x2F;&lt; number&gt;tmux switch -t &lt; name &amp;
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-21 16:52" pubdate>
-              2021-12-21
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hellow-world/">hellow world</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/21/pytorch%E5%9D%91+mujoco%E9%85%8D%E7%BD%AE/" target="_self">
-          pytorch+mujoco
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/21/pytorch%E5%9D%91+mujoco%E9%85%8D%E7%BD%AE/" target="_self">
-          
-          pytoch部分坑和理解1，torch.tensor重建2，torch的卷机操作和线性操作都不能够改变batch那一部分3，对于两个不同的model进行顺序处理和使用不同的optim时，需要先同时进行backward操作在进行，optimize.step操作4，对于此样系统而言：relu操作可能会造成数据的inplace，注意使用clone操作还有relu的（replace &#x3D; false）5,
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-21 16:52" pubdate>
-              2021-12-21
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hellow-world/">hellow world</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/21/firstPage/" target="_self">
-          博客搭建
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/21/firstPage/" target="_self">
-          
-          搭建个人博客mac版 大纲搭建博客主要分为三个部分，执行可以无先后之分。 分别是： 1，环境配置Hexo 2，部署到github上 3，绑定域名 个人建议先绑定域名，因为实名认证以及域名解析认证需要花费3-5天时间。 三者的关系是，域名作为入口，hexo创建门面，github储存内容。因此，他们需要相互连接才能建成最后的博客，hexo首先创建博客，然后推送到github上进行存储，github连接
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-21 16:52" pubdate>
-              2021-12-21
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hellow-world/">hellow world</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/21/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/21/hello-world/" target="_self">
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-21 16:42" pubdate>
-              2021-12-21
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
+  
+</article>
 
               </div>
             </div>
@@ -462,6 +302,19 @@
   
 
 
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
 
 
 

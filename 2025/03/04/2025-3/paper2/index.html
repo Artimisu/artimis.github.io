@@ -19,21 +19,28 @@
   <meta name="author" content="Artimis">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="3-5">
+    <meta name="description" content="https:&#x2F;&#x2F;openvla-oft.github.io Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success Stanford  Summary:This paper explores how to fine-tune VLA model better, and they propose Open VLA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fine-Tuning Vision-Language-Action Models:Optimizing Speed and Success">
 <meta property="og:url" content="http://example.com/2025/03/04/2025-3/paper2/index.html">
 <meta property="og:site_name" content="Artimis">
+<meta property="og:description" content="https:&#x2F;&#x2F;openvla-oft.github.io Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success Stanford  Summary:This paper explores how to fine-tune VLA model better, and they propose Open VLA">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/03/04/2025-3/paper2/image.png">
+<meta property="og:image" content="http://example.com/2025/03/04/2025-3/paper2/image-1.png">
+<meta property="og:image" content="http://example.com/2025/03/04/2025-3/paper2/image-2.png">
+<meta property="og:image" content="http://example.com/2025/03/04/2025-3/paper2/image-3.png">
 <meta property="article:published_time" content="2025-03-04T09:06:14.000Z">
-<meta property="article:modified_time" content="2025-03-04T14:26:19.632Z">
+<meta property="article:modified_time" content="2025-03-27T03:37:59.647Z">
 <meta property="article:author" content="Artimis">
-<meta property="article:tag" content="RL">
 <meta property="article:tag" content="Robot">
+<meta property="article:tag" content="VLA">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/03/04/2025-3/paper2/image.png">
   
   
   
-  <title>3-5 - Artimis</title>
+  <title>Fine-Tuning Vision-Language-Action Models:Optimizing Speed and Success - Artimis</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -211,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="3-5"></span>
+            <span id="subtitle" data-typed-text="Fine-Tuning Vision-Language-Action Models:Optimizing Speed and Success"></span>
           
         </div>
 
@@ -234,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          37 字
         
       </span>
     
@@ -282,12 +289,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">3-5</h1>
+            <h1 id="seo-header">Fine-Tuning Vision-Language-Action Models:Optimizing Speed and Success</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年3月4日 晚上
+                    本文最后更新于 2025年3月27日 中午
                   
                 
               </p>
@@ -295,7 +302,35 @@
             
               <div class="markdown-body">
                 
-                
+                <p>https://openvla-oft.github.io</p>
+<h2
+id="fine-tuning-vision-language-action-models-optimizing-speed-and-success">Fine-Tuning
+Vision-Language-Action Models: Optimizing Speed and Success</h2>
+<p>Stanford <img src="/2025/03/04/2025-3/paper2/image.png" srcset="/img/loading.gif" lazyload class=""></p>
+<p>Summary:This paper explores how to fine-tune VLA model better, and
+they propose Open VLA OFT(Optimized Fine-Tuning) based on Open VLA which
+contains parallel decoding action chunking and a continuous action
+representation, and a simple L1 regression -base learning object to
+improve performance and inference efficiency.</p>
+<img src="/2025/03/04/2025-3/paper2/image-1.png" srcset="/img/loading.gif" lazyload class="">
+<p>Parallel decoding:. We modify the model to receive empty action
+embeddings as input and replace the causal attention mask with
+bidirectional attention, allowing the decoder to predict all actions
+simultaneously.</p>
+<p>Action policy: Discrete action tokens is not better than continuous
+action policy. The author think that may because the discrete action
+lose more details. L1 regression is simple and efficient just like my
+experimental experience.</p>
+<p>FiLM: they also found that the policy struggle with language
+following due to spurious correlations in visual inputs, so they use
+FiLM(https://arxiv.org/abs/1709.07871)which infuse language embeddings
+into the visual representation so that the model can pay more attention
+to language inputs.</p>
+<img src="/2025/03/04/2025-3/paper2/image-2.png" srcset="/img/loading.gif" lazyload class="">
+<p>This result is consistent with my experiment findings: third image is
+enough to get a good performance.</p>
+<p>Real robot experiment:</p>
+<img src="/2025/03/04/2025-3/paper2/image-3.png" srcset="/img/loading.gif" lazyload class="">
 
                 
               </div>
@@ -336,9 +371,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/RL/" class="print-no-link">#RL</a>
-      
         <a href="/tags/Robot/" class="print-no-link">#Robot</a>
+      
+        <a href="/tags/VLA/" class="print-no-link">#VLA</a>
       
     </div>
   
@@ -350,7 +385,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>3-5</div>
+      <div>Fine-Tuning Vision-Language-Action Models:Optimizing Speed and Success</div>
       <div>http://example.com/2025/03/04/2025-3/paper2/</div>
     </div>
     <div class="license-meta">

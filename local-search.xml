@@ -64,11 +64,11 @@
   
   
   <entry>
-    <title>3-5</title>
+    <title>Fine-Tuning Vision-Language-Action Models:Optimizing Speed and Success</title>
     <link href="/2025/03/04/2025-3/paper2/"/>
     <url>/2025/03/04/2025-3/paper2/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>https://openvla-oft.github.io</p><h2id="fine-tuning-vision-language-action-models-optimizing-speed-and-success">Fine-TuningVision-Language-Action Models: Optimizing Speed and Success</h2><p>Stanford <img src="/2025/03/04/2025-3/paper2/image.png" class=""></p><p>Summary:This paper explores how to fine-tune VLA model better, andthey propose Open VLA OFT(Optimized Fine-Tuning) based on Open VLA whichcontains parallel decoding action chunking and a continuous actionrepresentation, and a simple L1 regression -base learning object toimprove performance and inference efficiency.</p><img src="/2025/03/04/2025-3/paper2/image-1.png" class=""><p>Parallel decoding:. We modify the model to receive empty actionembeddings as input and replace the causal attention mask withbidirectional attention, allowing the decoder to predict all actionssimultaneously.</p><p>Action policy: Discrete action tokens is not better than continuousaction policy. The author think that may because the discrete actionlose more details. L1 regression is simple and efficient just like myexperimental experience.</p><p>FiLM: they also found that the policy struggle with languagefollowing due to spurious correlations in visual inputs, so they useFiLM(https://arxiv.org/abs/1709.07871)which infuse language embeddingsinto the visual representation so that the model can pay more attentionto language inputs.</p><img src="/2025/03/04/2025-3/paper2/image-2.png" class=""><p>This result is consistent with my experiment findings: third image isenough to get a good performance.</p><p>Real robot experiment:</p><img src="/2025/03/04/2025-3/paper2/image-3.png" class="">]]></content>
     
     
     <categories>
@@ -82,9 +82,9 @@
     
     <tags>
       
-      <tag>RL</tag>
-      
       <tag>Robot</tag>
+      
+      <tag>VLA</tag>
       
     </tags>
     

@@ -19,22 +19,22 @@
   <meta name="author" content="Artimis">
   <meta name="keywords" content="">
   
-    <meta name="description" content="如何解压大文件 1. 常见解压方式及优化 使用 7z 解压 17z x file.zip -ooutput_dir -mmt&#x3D;48  -mmt&#x3D;48：使用 48 线程（根据 CPU 核心数调整）。 -ooutput_dir：指定输出目录。  续解压（跳过已解压文件） 7z x file.zip -ooutput_dir -aos -mmt&#x3D;48 使用 unzip 1unzip file.zip -">
+    <meta name="description" content="Loss不下降怎么办 在训练神经网络时，如果发现 Loss 长时间不下降，可以从以下两个方面进行检查。 1. 检查参数设置  学习率（Learning Rate）是否合适：  过大可能导致 Loss 震荡甚至发散。 过小可能导致收敛速度过慢甚至停滞。 观察 Loss 变化趋势，并尝试调整学习率。   优化器（Optimizer）设置：  是否正确初始化优化器？ 是否正确使用 zero_grad()">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何解压缩大文件">
-<meta property="og:url" content="http://example.com/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/index.html">
+<meta property="og:title" content="loss不下降怎么办">
+<meta property="og:url" content="http://example.com/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/index.html">
 <meta property="og:site_name" content="Artimis">
-<meta property="og:description" content="如何解压大文件 1. 常见解压方式及优化 使用 7z 解压 17z x file.zip -ooutput_dir -mmt&#x3D;48  -mmt&#x3D;48：使用 48 线程（根据 CPU 核心数调整）。 -ooutput_dir：指定输出目录。  续解压（跳过已解压文件） 7z x file.zip -ooutput_dir -aos -mmt&#x3D;48 使用 unzip 1unzip file.zip -">
+<meta property="og:description" content="Loss不下降怎么办 在训练神经网络时，如果发现 Loss 长时间不下降，可以从以下两个方面进行检查。 1. 检查参数设置  学习率（Learning Rate）是否合适：  过大可能导致 Loss 震荡甚至发散。 过小可能导致收敛速度过慢甚至停滞。 观察 Loss 变化趋势，并尝试调整学习率。   优化器（Optimizer）设置：  是否正确初始化优化器？ 是否正确使用 zero_grad()">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-03-27T03:48:19.000Z">
-<meta property="article:modified_time" content="2025-03-27T03:52:27.190Z">
+<meta property="article:published_time" content="2025-03-27T03:53:36.000Z">
+<meta property="article:modified_time" content="2025-03-27T04:00:57.219Z">
 <meta property="article:author" content="Artimis">
-<meta property="article:tag" content="linux">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>如何解压缩大文件 - Artimis</title>
+  <title>loss不下降怎么办 - Artimis</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="如何解压缩大文件"></span>
+            <span id="subtitle" data-typed-text="loss不下降怎么办"></span>
           
         </div>
 
@@ -223,7 +223,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-27 11:48" pubdate>
+        <time datetime="2025-03-27 11:53" pubdate>
           2025年3月27日 中午
         </time>
       </span>
@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          533 字
+          519 字
         
       </span>
     
@@ -283,7 +283,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">如何解压缩大文件</h1>
+            <h1 id="seo-header">loss不下降怎么办</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -296,89 +296,82 @@
             
               <div class="markdown-body">
                 
-                <h2 id="如何解压大文件">如何解压大文件</h2>
-<h3 id="常见解压方式及优化">1. <strong>常见解压方式及优化</strong></h3>
-<h4 id="使用-7z-解压"><strong>使用 <code>7z</code> 解压</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">7z x file.zip -ooutput_dir -mmt=48<br></code></pre></td></tr></table></figure>
+                <h1>Loss不下降怎么办</h1>
+<p>在训练神经网络时，如果发现 Loss 长时间不下降，可以从以下两个方面进行检查。</p>
+<h2 id="1-检查参数设置">1. 检查参数设置</h2>
 <ul>
-<li><code>-mmt=48</code>：使用 48 线程（根据 CPU 核心数调整）。</li>
-<li><code>-ooutput_dir</code>：指定输出目录。</li>
-</ul>
-<p><strong>续解压（跳过已解压文件）</strong> 7z x file.zip -ooutput_dir
--aos -mmt=48</p>
-<h4 id="使用-unzip"><strong>使用 <code>unzip</code></strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip file.zip -d output_dir<br></code></pre></td></tr></table></figure>
+<li><strong>学习率（Learning Rate）是否合适</strong>：
 <ul>
-<li><code>-d output_dir</code>：解压到指定目录。</li>
+<li>过大可能导致 Loss 震荡甚至发散。</li>
+<li>过小可能导致收敛速度过慢甚至停滞。</li>
+<li>观察 Loss 变化趋势，并尝试调整学习率。</li>
 </ul>
-<p><strong>继续上次的解压</strong> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip -n file.zip -d output_dir<br></code></pre></td></tr></table></figure> -
-<code>-d output_dir</code>：解压到指定目录。 -
-<code>-n</code>：避免覆盖已有文件，加快解压。 - #### <strong>使用
-<code>tar</code>（适用于 <code>.tar.gz</code> 或
-<code>.tar.bz2</code>）</strong> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tar -xvf file.tar.gz -C output_dir<br></code></pre></td></tr></table></figure> -
-<code>-x</code>：解压，<code>-v</code>：显示进度，<code>-f</code>：指定文件。</p>
-<h4 id="使用-pigz多线程-gzip"><strong>使用 <code>pigz</code>（多线程
-gzip）</strong></h4>
-<p>如果 <code>.zip</code> 里是 <code>.gz</code> 文件，换
-<code>pigz</code> 可加速： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pigz -dc file.gz | tar xvf -<br></code></pre></td></tr></table></figure></p>
-<h3 id="检查解压进度">2. <strong>检查解压进度</strong></h3>
-<h4 id="方法-1使用-pv-监控进度"><strong>方法 1：使用 <code>pv</code>
-监控进度</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pv file.zip | unzip -d output_dir<br></code></pre></td></tr></table></figure>
-<h4 id="方法-2使用-iotop-或-dstat-监控-io"><strong>方法 2：使用
-<code>iotop</code> 或 <code>dstat</code> 监控 I/O</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">iotop  <span class="hljs-comment"># 监控磁盘读写</span><br></code></pre></td></tr></table></figure>
-<h3 id="提高解压速度的方法">3. <strong>提高解压速度的方法</strong></h3>
-<h4 id="增加解压并行度"><strong>（1）增加解压并行度</strong></h4>
+</li>
+<li><strong>优化器（Optimizer）设置</strong>：
 <ul>
-<li><code>7z</code> 默认支持多线程，使用 <code>-mmt=N</code>
-来增加线程数。</li>
-<li><code>tar</code> 解压 <code>.tar.gz</code> 时可以用
-<code>pigz</code> 提高速度。</li>
+<li>是否正确初始化优化器？</li>
+<li>是否正确使用 <code>zero_grad()</code> 清除梯度？</li>
+<li>是否尝试了不同的优化器（AdamW、SGD 等）？</li>
 </ul>
-<h4 id="调整-io-优先级"><strong>（2）调整 I/O 优先级</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ionice -c 2 -n 0 unzip file.zip -d output_dir<br></code></pre></td></tr></table></figure>
+</li>
+<li><strong>Batch Size 影响</strong>：
 <ul>
-<li><code>-c 2</code>：后台模式，<code>-n 0</code> 最高优先级。</li>
+<li>过小的 batch size 可能导致梯度噪声较大。</li>
+<li>过大的 batch size 可能导致泛化能力下降。</li>
+<li>适当调整 batch size 观察效果。</li>
 </ul>
-<h4 id="清理缓存加速-io"><strong>（3）清理缓存，加速 I/O</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> 3 | sudo tee /proc/sys/vm/drop_caches<br></code></pre></td></tr></table></figure>
-<h3 id="如何断点续解">4. <strong>如何断点续解</strong></h3>
-<p>如果解压中断，可以使用： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">7z x file.zip -ooutput_dir -aos<br></code></pre></td></tr></table></figure> -
-<code>-aos</code>：跳过已解压的文件，避免重复解压。</p>
-<p>或者使用 <code>rsync</code> 进行增量同步： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rsync -av --ignore-existing <span class="hljs-built_in">source</span>/ destination/<br></code></pre></td></tr></table></figure></p>
-<h3 id="如何检查解压是否正确">5.
-<strong>如何检查解压是否正确</strong></h3>
-<h4 id="使用-diff-或-md5sum-对比原始文件"><strong>使用 <code>diff</code>
-或 <code>md5sum</code> 对比原始文件</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">diff -r output_dir original_files_dir<br>md5sum file.zip &gt; checksum.txt<br>md5sum -c checksum.txt<br></code></pre></td></tr></table></figure>
-<h4 id="使用-7z-校验完整性"><strong>使用 <code>7z</code>
-校验完整性</strong></h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">7z t file.zip<br></code></pre></td></tr></table></figure>
+</li>
+<li><strong>数据是否正确</strong>：
 <ul>
-<li><code>t</code> 选项可检测 <code>.zip</code> 文件是否损坏。</li>
+<li>目标值范围是否正确？</li>
+<li>是否存在数据泄漏？</li>
+<li>归一化或标准化是否一致？</li>
 </ul>
-<h3 id="解决卡顿问题">6. <strong>解决卡顿问题</strong></h3>
-<p>如果 <code>iotop</code> 显示磁盘写入很低，可能是 <strong>I/O
-调度问题</strong>： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo renice -n -5 -p $(pgrep unzip)<br></code></pre></td></tr></table></figure> - 提高 <code>unzip</code>
-进程的优先级。</p>
-<p>如果 <strong>CPU 占用高</strong>，可能是
-<strong>单线程瓶颈</strong>，可以尝试： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip -n file.zip -d output_dir &amp;<br></code></pre></td></tr></table></figure> -
-<code>&amp;</code> 让解压在后台运行，减少主线程负担。</p>
-<hr />
-<h2 id="结论">结论</h2>
+</li>
+</ul>
+<h2 id="2-检查-Grad-和计算图">2. 检查 Grad 和计算图</h2>
 <ul>
-<li><strong>使用 <code>7z</code> 和 <code>unzip -n</code></strong>
-避免重复解压。</li>
-<li><strong>使用 <code>-mmt=48</code> 增加线程数</strong>
-提高速度。</li>
-<li><strong>监控 I/O (<code>iotop</code>) 识别瓶颈</strong>。</li>
-<li><strong>使用 <code>7z t</code> 或 <code>md5sum</code>
-校验完整性</strong>。</li>
-<li><strong>断点续解：使用 <code>7z -aos</code> 或
-<code>rsync</code></strong>。</li>
+<li><strong>梯度是否正确计算</strong>：
+<ul>
+<li>通过 <code>on_after_backward()</code> 或 <code>on_before_optimizer_step()</code> 检查参数的梯度是否为 <code>None</code>。</li>
+<li>可能原因：参数未注册、未计算梯度或梯度被截断。</li>
 </ul>
-<p>通过这些方法，可以更快、更安全地解压大文件。</p>
+</li>
+<li><strong>输入是否有 <code>requires_grad=True</code></strong>
+<ul>
+<li>使用 <code>input.requires_grad</code> 检查输入是否可计算梯度。</li>
+<li>如果 <code>requires_grad=False</code>，则反向传播不会计算梯度。</li>
+</ul>
+</li>
+<li><strong>检查梯度是否过大或过小（Lightning PyTorch）</strong>
+<ul>
+<li>在 <code>on_after_backward()</code> 里打印梯度范数：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_after_backward</span>(<span class="hljs-params">self</span>):</span><br>    <span class="hljs-keyword">for</span> name, param <span class="hljs-keyword">in</span> self.named_parameters():<br>        <span class="hljs-keyword">if</span> param.grad <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>            self.log(<span class="hljs-string">f&quot;grad_norm/<span class="hljs-subst">&#123;name&#125;</span>&quot;</span>, param.grad.norm())<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Layer <span class="hljs-subst">&#123;name&#125;</span> | Grad Norm: <span class="hljs-subst">&#123;param.grad.norm().item()&#125;</span>&quot;</span>)<br></code></pre></td></tr></table></figure>
+</li>
+<li>观察是否存在梯度爆炸（梯度过大）或梯度消失（梯度趋近于 0）。</li>
+</ul>
+</li>
+<li><strong>计算图是否正确构建</strong>
+<ul>
+<li>确保 <code>loss</code> 依赖于所有参数，否则 <code>loss.backward()</code> 不会正确计算梯度。</li>
+<li>检查 <code>loss.requires_grad</code> 是否为 <code>True</code>。</li>
+<li>确保没有错误使用 <code>.detach()</code> 或 <code>torch.no_grad()</code>，否则会截断梯度。</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-其他可能原因">3. 其他可能原因</h2>
+<ul>
+<li><strong>梯度裁剪（Gradient Clipping）</strong>
+<ul>
+<li>在梯度爆炸时使用 <code>self.clip_gradients(optimizer, gradient_clip_val=1.0)</code> 进行裁剪。</li>
+</ul>
+</li>
+<li><strong>检查是否正确使用 <code>manual_backward()</code>（Lightning）</strong>
+<ul>
+<li>仅在 <code>automatic_optimization=False</code> 时，才需要手动调用 <code>manual_backward(loss)</code>。</li>
+</ul>
+</li>
+</ul>
+<p>如果按照这些步骤排查，应该能找到 Loss 不下降的原因并加以修正。</p>
 
                 
               </div>
@@ -397,7 +390,7 @@ gzip）</strong></h4>
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  <a href="/categories/code/" class="category-chain-item">code</a>
   
   
 
@@ -412,7 +405,7 @@ gzip）</strong></h4>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/linux/" class="print-no-link">#linux</a>
+        <a href="/tags/python/" class="print-no-link">#python</a>
       
     </div>
   
@@ -424,8 +417,8 @@ gzip）</strong></h4>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>如何解压缩大文件</div>
-      <div>http://example.com/2025/03/27/如何解压缩大文件/</div>
+      <div>loss不下降怎么办</div>
+      <div>http://example.com/2025/03/27/loss不下降怎么办/</div>
     </div>
     <div class="license-meta">
       
@@ -469,18 +462,12 @@ gzip）</strong></h4>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/" title="loss不下降怎么办">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">loss不下降怎么办</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/06/2025-3/paper4/" title="OTTER:A Vision-Language-Action Model with Text-Aware Visual Feature Extraction">
-                        <span class="hidden-mobile">OTTER:A Vision-Language-Action Model with Text-Aware Visual Feature Extraction</span>
+                      <a href="/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/" title="如何解压缩大文件">
+                        <span class="hidden-mobile">如何解压缩大文件</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -500,8 +487,8 @@ gzip）</strong></h4>
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/';
-          this.page.identifier = '/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/';
+          this.page.url = 'http://example.com/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/';
+          this.page.identifier = '/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

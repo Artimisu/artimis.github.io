@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>loss不下降怎么办</title>
+    <link href="/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/"/>
+    <url>/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/</url>
+    
+    <content type="html"><![CDATA[<h1>Loss不下降怎么办</h1><p>在训练神经网络时，如果发现 Loss 长时间不下降，可以从以下两个方面进行检查。</p><h2 id="1-检查参数设置">1. 检查参数设置</h2><ul><li><strong>学习率（Learning Rate）是否合适</strong>：<ul><li>过大可能导致 Loss 震荡甚至发散。</li><li>过小可能导致收敛速度过慢甚至停滞。</li><li>观察 Loss 变化趋势，并尝试调整学习率。</li></ul></li><li><strong>优化器（Optimizer）设置</strong>：<ul><li>是否正确初始化优化器？</li><li>是否正确使用 <code>zero_grad()</code> 清除梯度？</li><li>是否尝试了不同的优化器（AdamW、SGD 等）？</li></ul></li><li><strong>Batch Size 影响</strong>：<ul><li>过小的 batch size 可能导致梯度噪声较大。</li><li>过大的 batch size 可能导致泛化能力下降。</li><li>适当调整 batch size 观察效果。</li></ul></li><li><strong>数据是否正确</strong>：<ul><li>目标值范围是否正确？</li><li>是否存在数据泄漏？</li><li>归一化或标准化是否一致？</li></ul></li></ul><h2 id="2-检查-Grad-和计算图">2. 检查 Grad 和计算图</h2><ul><li><strong>梯度是否正确计算</strong>：<ul><li>通过 <code>on_after_backward()</code> 或 <code>on_before_optimizer_step()</code> 检查参数的梯度是否为 <code>None</code>。</li><li>可能原因：参数未注册、未计算梯度或梯度被截断。</li></ul></li><li><strong>输入是否有 <code>requires_grad=True</code></strong><ul><li>使用 <code>input.requires_grad</code> 检查输入是否可计算梯度。</li><li>如果 <code>requires_grad=False</code>，则反向传播不会计算梯度。</li></ul></li><li><strong>检查梯度是否过大或过小（Lightning PyTorch）</strong><ul><li>在 <code>on_after_backward()</code> 里打印梯度范数：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_after_backward</span>(<span class="hljs-params">self</span>):</span><br>    <span class="hljs-keyword">for</span> name, param <span class="hljs-keyword">in</span> self.named_parameters():<br>        <span class="hljs-keyword">if</span> param.grad <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>            self.log(<span class="hljs-string">f&quot;grad_norm/<span class="hljs-subst">&#123;name&#125;</span>&quot;</span>, param.grad.norm())<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Layer <span class="hljs-subst">&#123;name&#125;</span> | Grad Norm: <span class="hljs-subst">&#123;param.grad.norm().item()&#125;</span>&quot;</span>)<br></code></pre></td></tr></table></figure></li><li>观察是否存在梯度爆炸（梯度过大）或梯度消失（梯度趋近于 0）。</li></ul></li><li><strong>计算图是否正确构建</strong><ul><li>确保 <code>loss</code> 依赖于所有参数，否则 <code>loss.backward()</code> 不会正确计算梯度。</li><li>检查 <code>loss.requires_grad</code> 是否为 <code>True</code>。</li><li>确保没有错误使用 <code>.detach()</code> 或 <code>torch.no_grad()</code>，否则会截断梯度。</li></ul></li></ul><h2 id="3-其他可能原因">3. 其他可能原因</h2><ul><li><strong>梯度裁剪（Gradient Clipping）</strong><ul><li>在梯度爆炸时使用 <code>self.clip_gradients(optimizer, gradient_clip_val=1.0)</code> 进行裁剪。</li></ul></li><li><strong>检查是否正确使用 <code>manual_backward()</code>（Lightning）</strong><ul><li>仅在 <code>automatic_optimization=False</code> 时，才需要手动调用 <code>manual_backward(loss)</code>。</li></ul></li></ul><p>如果按照这些步骤排查，应该能找到 Loss 不下降的原因并加以修正。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>code</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何解压缩大文件</title>
     <link href="/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/"/>
     <url>/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/</url>

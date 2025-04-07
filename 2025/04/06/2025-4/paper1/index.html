@@ -19,22 +19,29 @@
   <meta name="author" content="Artimis">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Loss不下降怎么办 在训练神经网络时，如果发现 Loss 长时间不下降，可以从以下两个方面进行检查。 1. 检查参数设置  学习率（Learning Rate）是否合适：  过大可能导致 Loss 震荡甚至发散。 过小可能导致收敛速度过慢甚至停滞。 观察 Loss 变化趋势，并尝试调整学习率。  优化器（Optimizer）设置：  是否正确初始化优化器？ 是否正确使用 zero_grad()">
+    <meta name="description" content="Mastering Diverse Domains through World Models google Nature2024 arxiv2023 Author: Danijar Hafner,12 Jurgis Pasukonis,1 Jimmy Ba,2 Timothy Lillicrap1 Paper link: http:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2301.04104 Code l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="loss不下降怎么办">
-<meta property="og:url" content="http://example.com/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/index.html">
+<meta property="og:title" content="Mastering Diverse Domains through World Models">
+<meta property="og:url" content="http://example.com/2025/04/06/2025-4/paper1/index.html">
 <meta property="og:site_name" content="Artimis">
-<meta property="og:description" content="Loss不下降怎么办 在训练神经网络时，如果发现 Loss 长时间不下降，可以从以下两个方面进行检查。 1. 检查参数设置  学习率（Learning Rate）是否合适：  过大可能导致 Loss 震荡甚至发散。 过小可能导致收敛速度过慢甚至停滞。 观察 Loss 变化趋势，并尝试调整学习率。  优化器（Optimizer）设置：  是否正确初始化优化器？ 是否正确使用 zero_grad()">
+<meta property="og:description" content="Mastering Diverse Domains through World Models google Nature2024 arxiv2023 Author: Danijar Hafner,12 Jurgis Pasukonis,1 Jimmy Ba,2 Timothy Lillicrap1 Paper link: http:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2301.04104 Code l">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-03-27T03:53:36.000Z">
-<meta property="article:modified_time" content="2025-03-27T15:00:31.910Z">
+<meta property="og:image" content="http://example.com/2025/04/06/2025-4/paper1/image.png">
+<meta property="og:image" content="http://example.com/2025/04/06/2025-4/paper1/image-1.png">
+<meta property="og:image" content="http://example.com/2025/04/06/2025-4/paper1/image-2.png">
+<meta property="og:image" content="http://example.com/2025/04/06/2025-4/paper1/image-3.png">
+<meta property="article:published_time" content="2025-04-06T11:45:14.000Z">
+<meta property="article:modified_time" content="2025-04-07T09:34:58.635Z">
 <meta property="article:author" content="Artimis">
-<meta property="article:tag" content="python">
+<meta property="article:tag" content="RL">
+<meta property="article:tag" content="Robot">
+<meta property="article:tag" content="World Model">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/04/06/2025-4/paper1/image.png">
   
   
   
-  <title>loss不下降怎么办 - Artimis</title>
+  <title>Mastering Diverse Domains through World Models - Artimis</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +219,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="loss不下降怎么办"></span>
+            <span id="subtitle" data-typed-text="Mastering Diverse Domains through World Models"></span>
           
         </div>
 
@@ -223,8 +230,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-27 11:53" pubdate>
-          2025年3月27日 中午
+        <time datetime="2025-04-06 19:45" pubdate>
+          2025年4月6日 晚上
         </time>
       </span>
     
@@ -235,7 +242,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          770 字
+          179 字
         
       </span>
     
@@ -246,7 +253,7 @@
         
         
         
-          7 分钟
+          2 分钟
         
       </span>
     
@@ -283,12 +290,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">loss不下降怎么办</h1>
+            <h1 id="seo-header">Mastering Diverse Domains through World Models</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年3月27日 晚上
+                    本文最后更新于 2025年4月7日 下午
                   
                 
               </p>
@@ -296,89 +303,31 @@
             
               <div class="markdown-body">
                 
-                <h1 id="loss不下降怎么办">Loss不下降怎么办</h1>
-<p>在训练神经网络时，如果发现 Loss
-长时间不下降，可以从以下两个方面进行检查。</p>
-<h2 id="检查参数设置">1. 检查参数设置</h2>
-<ul>
-<li><strong>学习率（Learning Rate）是否合适</strong>：
-<ul>
-<li>过大可能导致 Loss 震荡甚至发散。</li>
-<li>过小可能导致收敛速度过慢甚至停滞。</li>
-<li>观察 Loss 变化趋势，并尝试调整学习率。</li>
-</ul></li>
-<li><strong>优化器（Optimizer）设置</strong>：
-<ul>
-<li>是否正确初始化优化器？</li>
-<li>是否正确使用 <code>zero_grad()</code> 清除梯度？</li>
-<li>是否尝试了不同的优化器（AdamW、SGD 等）？</li>
-</ul></li>
-<li><strong>Batch Size 影响</strong>：
-<ul>
-<li>过小的 batch size 可能导致梯度噪声较大。</li>
-<li>过大的 batch size 可能导致泛化能力下降。</li>
-<li>适当调整 batch size 观察效果。</li>
-</ul></li>
-<li><strong>数据是否正确</strong>：
-<ul>
-<li>目标值范围是否正确？</li>
-<li>是否存在数据泄漏？</li>
-<li>归一化或标准化是否一致？</li>
-</ul></li>
-</ul>
-<h2 id="检查-param-和-param.grad">2. 检查 param 和 param.grad</h2>
-<ul>
-<li><strong>param是否被正确初始化！！！</strong>：
-<ul>
-<li>检查param是否被初始化为0,如果有梯度初始化为0的层一定要注意！！！最后的loss看起来正常但是可能实际上在反传的时候是nan
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> name, param <span class="hljs-keyword">in</span> self.named_parameters():<br>    <span class="hljs-keyword">if</span> (param == <span class="hljs-number">0</span>).<span class="hljs-built_in">all</span>():<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Parameter <span class="hljs-subst">&#123;name&#125;</span> is all zeros!&quot;</span>)<br>    <span class="hljs-keyword">if</span> param.grad <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>        self.log(<span class="hljs-string">f&quot;grad_norm/<span class="hljs-subst">&#123;name&#125;</span>&quot;</span>, param.grad.norm())  <span class="hljs-comment"># 记录梯度范数</span><br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Layer <span class="hljs-subst">&#123;name&#125;</span> | Grad Norm: <span class="hljs-subst">&#123;param.grad.norm().item()&#125;</span>&quot;</span>)<br></code></pre></td></tr></table></figure></li>
-<li>如果检查到param初始化有0的，用别的初始化方法代替 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 初始化参数为0的代码</span><br>param = nn.Parameter(torch.zeros(param_shape))<br>param.fill_(<span class="hljs-number">0</span>)<br><span class="hljs-comment"># 初始化为正态分布</span><br>nn.init.normal_(param, mean=<span class="hljs-number">0.0</span>, std=<span class="hljs-number">0.02</span>)<br><span class="hljs-comment"># 如果param是2维的，可以用Xavier 初始化</span><br>nn.init.xavier_uniform_(param)  <span class="hljs-comment"># Xavier 初始化</span><br></code></pre></td></tr></table></figure></li>
-</ul></li>
-<li><strong>梯度是否正确计算</strong>：
-<ul>
-<li>通过 <code>on_after_backward()</code> 或
-<code>on_before_optimizer_step()</code> 检查参数的梯度是否为
-<code>None</code>。</li>
-<li>可能原因：参数未注册、未计算梯度或梯度被截断。</li>
-</ul></li>
-<li><strong>输入是否有 <code>requires_grad=True</code></strong>
-<ul>
-<li>使用 <code>input.requires_grad</code> 检查输入是否可计算梯度。</li>
-<li>如果 <code>requires_grad=False</code>，则反向传播不会计算梯度。</li>
-</ul></li>
-<li><strong>检查梯度是否过大或过小（Lightning PyTorch）</strong>
-<ul>
-<li>如果你使用的是lighting pytorch 包，可以在
-<code>on_after_backward()</code> 里打印梯度范数： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_after_backward</span>(<span class="hljs-params">self</span>):</span><br>    <span class="hljs-keyword">for</span> name, param <span class="hljs-keyword">in</span> self.named_parameters():<br>        <span class="hljs-keyword">if</span> param.grad <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>            self.log(<span class="hljs-string">f&quot;grad_norm/<span class="hljs-subst">&#123;name&#125;</span>&quot;</span>, param.grad.norm())<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Layer <span class="hljs-subst">&#123;name&#125;</span> | Grad Norm: <span class="hljs-subst">&#123;param.grad.norm().item()&#125;</span>&quot;</span>)<br></code></pre></td></tr></table></figure></li>
-<li>如果你在 DeepSpeed / FSDP / DDP 之类的分布式环境下训练，梯度可能在
-on_after_backward 之外的地方被同步，导致 .grad 一直是
-None，上面的方法会不适用。因此你可以用hook来检查 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hook_fn</span>(<span class="hljs-params">self, grad</span>):</span><br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Gradient: <span class="hljs-subst">&#123;grad&#125;</span>&quot;</span>)<br><span class="hljs-comment"># 在你的training_step中加入</span><br><span class="hljs-keyword">for</span> name, param <span class="hljs-keyword">in</span> self.named_parameters():<br>  <span class="hljs-keyword">if</span> param.requires_grad:<br>      param.register_hook(hook_fn)<br></code></pre></td></tr></table></figure></li>
-</ul></li>
-<li><strong>计算图是否正确构建</strong>
-<ul>
-<li>确保 <code>loss</code> 依赖于所有参数，否则
-<code>loss.backward()</code> 不会正确计算梯度。</li>
-<li>检查 <code>loss.requires_grad</code> 是否为 <code>True</code>。</li>
-<li>确保没有错误使用 <code>.detach()</code> 或
-<code>torch.no_grad()</code>，否则会截断梯度。</li>
-</ul></li>
-</ul>
-<h2 id="其他可能原因">3. 其他可能原因</h2>
-<ul>
-<li><strong>梯度裁剪（Gradient Clipping）</strong>
-<ul>
-<li>在梯度爆炸时使用
-<code>self.clip_gradients(optimizer, gradient_clip_val=1.0)</code>
-进行裁剪。</li>
-</ul></li>
-<li><strong>检查是否正确使用
-<code>manual_backward()</code>（Lightning）</strong>
-<ul>
-<li>仅在 <code>automatic_optimization=False</code> 时，才需要手动调用
-<code>manual_backward(loss)</code>。</li>
-</ul></li>
-</ul>
-<p>如果按照这些步骤排查，应该能找到 Loss 不下降的原因并加以修正。</p>
+                <h2 id="mastering-diverse-domains-through-world-models">Mastering
+Diverse Domains through World Models</h2>
+<p>google Nature2024 arxiv2023</p>
+<p>Author: Danijar Hafner,12 Jurgis Pasukonis,1 Jimmy Ba,2 Timothy
+Lillicrap1</p>
+<p>Paper link: http://arxiv.org/abs/2301.04104</p>
+<p>Code link: https://github.com/danijar/dreamerv3</p>
+<p>Goal: Developing a <strong>general algorithm</strong> that learns to
+solve tasks across a wide range of applications</p>
+<p>Method: Dreamer learns a model of the environment and improves its
+behavior by imagining future scenarios.</p>
+<p>纯强化学习，无需人类数据</p>
+<img src="/2025/04/06/2025-4/paper1/image.png" srcset="/img/loading.gif" lazyload class="" title="Figure 3">
+<p>将world model
+和强化学习结合的典范，前半段输入是a,隐变量h,以及特征空间z，学习到动作隐变量h,还有encoder。实际上就是学到了预测未来的能力，这个未来是用h来进行表示的。在强化学习阶段，则用h来预测v,r,a。而h就是在抽象了当前信息，以及世界模型预测的信息后得到的动作隐变量，然后通过actor
+critic模型得到a r v</p>
+<p>world model predicts the outcomes of potential actions, the critic
+judges the value of each outcome, and the actor chooses actions to reach
+the most valuable outcomes.</p>
+<p>world model： Recurrent State-Space Model (RSSM)</p>
+<img src="/2025/04/06/2025-4/paper1/image-1.png" srcset="/img/loading.gif" lazyload class="" title="alt text">
+<p>能看到越往后预测的越不准确</p>
+<p>结果： <img src="/2025/04/06/2025-4/paper1/image-2.png" srcset="/img/loading.gif" lazyload class="" title="alt text"></p>
+<p>reward平滑：</p>
+<img src="/2025/04/06/2025-4/paper1/image-3.png" srcset="/img/loading.gif" lazyload class="" title="alt text">
 
                 
               </div>
@@ -397,8 +346,15 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
     
       <span class="category-chain">
         
-  <a href="/categories/code/" class="category-chain-item">code</a>
+  <a href="/categories/AI-Paper-Reading/" class="category-chain-item">AI-Paper-Reading</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/AI-Paper-Reading/RL/" class="category-chain-item">RL</a>
+  
+  
+
   
 
       </span>
@@ -412,7 +368,11 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/python/" class="print-no-link">#python</a>
+        <a href="/tags/RL/" class="print-no-link">#RL</a>
+      
+        <a href="/tags/Robot/" class="print-no-link">#Robot</a>
+      
+        <a href="/tags/World-Model/" class="print-no-link">#World Model</a>
       
     </div>
   
@@ -424,8 +384,8 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>loss不下降怎么办</div>
-      <div>http://example.com/2025/03/27/loss不下降怎么办/</div>
+      <div>Mastering Diverse Domains through World Models</div>
+      <div>http://example.com/2025/04/06/2025-4/paper1/</div>
     </div>
     <div class="license-meta">
       
@@ -437,7 +397,7 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月27日</div>
+          <div>2025年4月6日</div>
         </div>
       
       
@@ -469,9 +429,9 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/06/2025-4/paper1/" title="Mastering Diverse Domains through World Models">
+                      <a href="/2025/04/07/2025-4/paper2/" title="NOPROP:TRAINING NEURAL NETWORKS WITHOUT BACK-PROPAGATION OR FORWARD-PROPAGATION">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Mastering Diverse Domains through World Models</span>
+                        <span class="hidden-mobile">NOPROP:TRAINING NEURAL NETWORKS WITHOUT BACK-PROPAGATION OR FORWARD-PROPAGATION</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -479,8 +439,8 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/27/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%A4%A7%E6%96%87%E4%BB%B6/" title="如何解压缩大文件">
-                        <span class="hidden-mobile">如何解压缩大文件</span>
+                      <a href="/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/" title="loss不下降怎么办">
+                        <span class="hidden-mobile">loss不下降怎么办</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -500,8 +460,8 @@ None，上面的方法会不适用。因此你可以用hook来检查 <figure cla
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/';
-          this.page.identifier = '/2025/03/27/loss%E4%B8%8D%E4%B8%8B%E9%99%8D%E6%80%8E%E4%B9%88%E5%8A%9E/';
+          this.page.url = 'http://example.com/2025/04/06/2025-4/paper1/';
+          this.page.identifier = '/2025/04/06/2025-4/paper1/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
